@@ -28,8 +28,12 @@ Some components to help viewers understant the trend better
 ## Overview
 Forecasting is a common data science practice which helps organisations to set their goals/plans. This model essentially helps an organization in anomaly detection and setting goals. This model works best with saturated markets but can also be used with volatile markets. Uncertainity in a forecast is estimated by extending the generative model forward. The generative model for the trend is that there are `S` changepoints over a history of `T` points,  each of which has a rate change `jLaplace(0;)`.
 
+
 ### Seasonality 
 Business time series often have multi-period seasonality as a result of the human behaviors they represent. For instance, a 5-day work week can produce effects on a time series that repeat each week, while vacation schedules and school breaks can produce effects that repeat each year. To fit and forecast these effects we must specify seasonality models that are periodic functions of `t`.
+
+## Purpose
+The main purpose of this model is to help every business/organisation to utilise ML models easily, I have created a User friendly web app so even a non-techy person can make the most out of Machine Learning! The ultimate goal is to create a web app in which the user can have various option of selecting ML/AI models based on their accuracy for prediction. 
 
 ## Running the model
 In order to view/test the project you can directly click on the link mentioned above.
@@ -44,6 +48,6 @@ But if you want to add your historical data then you will need to follow these s
 ## Future Plans  
 - Add 'file upload' feature to the app so the users can directly upload their historical data 
 - Add more editable parameters for the users 
-- Integrate neural network model LSTM 
+- Integrate more models like LSTM
 
 
