@@ -32,7 +32,18 @@ Forecasting is a common data science practice which helps organisations to set t
 Business time series often have multi-period seasonality as a result of the human behaviors they represent. For instance, a 5-day work week can produce effects on a time series that repeat each week, while vacation schedules and school breaks can produce effects that repeat each year.  To fit and forecast these effects we must specify seasonality models that are periodic functions of `t`.
 
 ## Running the model
-In order to view/test the project you can directly click on the link mentioned above. But if you want to add your own historical data (.csv) for prediction then the user will need to download the project and change the current `.csv` with your historical data and in `df` variable they will need to input the name of their historical data file and run `final.py`
+In order to view/test the project you can directly click on the link mentioned above.
+But if you want to add your historical data then you will need to follow these steps:
+- download the file from github 
+- change `AirPassengers.csv` with your `.csv` containing the historical data (the data should be in two columns date and closing value)
+- In the `df` variable change `AirPassengers.csv` with your path of the data 
+- In `df_train = df[['Month','#Passengers']]` and `df_train = df_train.rename(columns={'Month':'ds','#Passengers':'y'})` swap "month" and "#passengers" with your two columns names
+- run `final.py` 
+- input `streamlit run final.py` in the terminal to start the localhost 
 
+## Future Plans  
+- Add 'file upload' feature to the app so the users can directly upload their historical data 
+- Add more editable parameters for the users 
+- Integrate neural network model LSTM 
 
 
