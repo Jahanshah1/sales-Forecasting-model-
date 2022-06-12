@@ -35,7 +35,7 @@ Business time series often have multi-period seasonality as a result of the huma
 In order to view/test the project you can directly click on the link mentioned above.
 But if you want to add your historical data then you will need to follow these steps:
 - download the file from github 
-- change `AirPassengers.csv` with your `.csv` containing the historical data (the data should be in two columns date and closing value)
+- change `AirPassengers.csv` with your `.csv` containing the historical data (the data should be in two columns with date and closing value)
 - In the `df` variable change `AirPassengers.csv` with your path of the data 
 - In `df_train = df[['Month','#Passengers']]` and `df_train = df_train.rename(columns={'Month':'ds','#Passengers':'y'})` swap "month" and "#passengers" with your two columns names
 - run `final.py` 
