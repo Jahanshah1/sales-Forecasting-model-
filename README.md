@@ -37,6 +37,12 @@ The main purpose of this model is to help every business/organisation to utilise
 
 ## Running the model
 In order to view/test the project you can directly click on the link mentioned above.
+
+### simply running the model in local host:
+- download the file from github
+- run `final.py`
+- input `streamlit run final.py` in the terminal
+
 But if you want to add your historical data then you will need to follow these steps:
 - download the file from github 
 - change `AirPassengers.csv` with your `.csv` containing the historical data (the data should be in two columns with date and closing value)
