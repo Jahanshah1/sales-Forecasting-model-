@@ -12,7 +12,7 @@ homepage of the model, where the raw predicted data is shown and 'years of predi
 
 ### Plot
 <img width="988" alt="Screenshot 2022-06-12 at 11 16 50 AM" src="https://user-images.githubusercontent.com/92823408/173217837-e250006a-e7ef-41a2-8e3c-6a6fabaa9cc2.png">
-Here the raw data is plotted into a graph so people can understand it better. The black dots refer to the actual data (a constant), the blue line is the predicted value and the blue area hovering around the blue line is the expected slippage.
+Here the raw data is plotted into a graph so people can understand it better. The black dots refer to the actual data (a constant), the blue line is the predicted value and the blue area hovering around the blue line is the expected loss of accuracy.
 
 ### forecast components
 <img width="829" alt="Screenshot 2022-06-12 at 11 17 02 AM" src="https://user-images.githubusercontent.com/92823408/173218413-dd311d83-62b7-48a9-a024-58b0029b8464.png">
@@ -25,5 +25,14 @@ Some components to help viewers understant the trend better
 - FBProphet 
 - Pandas 
 
-## Things To Know Before Using The Model 
-the model works best for saturated markets, 
+## Overview
+Forecasting is a common data science practice which helps organisations to set their goals/plans. This model essentially helps an organization in anomaly detection and setting goals. This model works best with saturated markets but can also be used with volatile markets. Uncertainity in a forecast is estimated by extending the generativemodel forward. The generative model for the trend is that there are `S`  changepoints over a history of `T` points,  each of which has a rate change `jLaplace(0;)`.
+
+### Seasonality 
+Business time series often have multi-period seasonality as a result of the human behaviors they represent. For instance, a 5-day work week can produce effects on a time series that repeat each week, while vacation schedules and school breaks can produce effects that repeat each year.  To fit and forecast these effects we must specify seasonality models that are periodic functions of `t`.
+
+## Running the model
+In order to view/test the project you can directly click on the link mentioned above. But if you want to add your own historical data (.csv) for prediction then the user will need to download the project and change the current `.csv` with your historical data and in `df` variable they will need to input the name of their historical data file and run `final.py`
+
+
+
