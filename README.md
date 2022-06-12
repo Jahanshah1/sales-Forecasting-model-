@@ -3,7 +3,7 @@
 link to the model - https://share.streamlit.io/jahanshah1/sales-forecasting-model-/main/final.py
 
 ## Introduction
-This is an ARIMA (Auto Regressive Integrated Moving Average) model to predict the sales of a business or a product with a user friendly graph plot, It can help predict future sales based on the historical data given in `.csv` format.  
+This is an ARIMA (Auto Regressive Integrated Moving Average) model to predict the sales of a business or a product with an user friendly graph plot, It can help predict future sales based on the historical data given in `.csv` format.  
 
 ## screenshots 
 ### main-page
@@ -26,10 +26,10 @@ Some components to help viewers understant the trend better
 - Pandas 
 
 ## Overview
-Forecasting is a common data science practice which helps organisations to set their goals/plans. This model essentially helps an organization in anomaly detection and setting goals. This model works best with saturated markets but can also be used with volatile markets. Uncertainity in a forecast is estimated by extending the generativemodel forward. The generative model for the trend is that there are `S`  changepoints over a history of `T` points,  each of which has a rate change `jLaplace(0;)`.
+Forecasting is a common data science practice which helps organisations to set their goals/plans. This model essentially helps an organization in anomaly detection and setting goals. This model works best with saturated markets but can also be used with volatile markets. Uncertainity in a forecast is estimated by extending the generative model forward. The generative model for the trend is that there are `S` changepoints over a history of `T` points,  each of which has a rate change `jLaplace(0;)`.
 
 ### Seasonality 
-Business time series often have multi-period seasonality as a result of the human behaviors they represent. For instance, a 5-day work week can produce effects on a time series that repeat each week, while vacation schedules and school breaks can produce effects that repeat each year.  To fit and forecast these effects we must specify seasonality models that are periodic functions of `t`.
+Business time series often have multi-period seasonality as a result of the human behaviors they represent. For instance, a 5-day work week can produce effects on a time series that repeat each week, while vacation schedules and school breaks can produce effects that repeat each year. To fit and forecast these effects we must specify seasonality models that are periodic functions of `t`.
 
 ## Running the model
 In order to view/test the project you can directly click on the link mentioned above.
