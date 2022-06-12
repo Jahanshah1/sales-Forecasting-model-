@@ -6,7 +6,7 @@ from plotly import graph_objs as go
 
 
 
-st.title('Forecasting model by Jahan')
+st.title('Forecasting model')
 
 df = pd.read_csv('AirPassengers.csv')
 
